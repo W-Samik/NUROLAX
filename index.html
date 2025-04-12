@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. NEURO - Early Detection for Neurodegenerative Disorders</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header/Navigation -->
+    <header class="header">
+        <div class="container">
+            <a href="#" class="logo">
+                <img src="images\logo.webp" alt="Dr. NEURO Logo">
+                <span>Dr. NEURO</span>
+            </a>
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+        <div class="nav" id="data-collection">
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#problem">Problem</a></li>
+                    <li><a href="#solution">Solution</a></li>
+                    <li><a href="#technology">Technology</a></li>
+                    <li><a href="#results">Results</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="fade-in">Detect Neurodegenerative Diseases Before Symptoms Appear</h1>
+                <p class="fade-in delay-1">A privacy-first AI platform that turns your smartphone into an early detection tool for Parkinson's, ALS, and Huntington's disease.</p>
+                <div class="cta-buttons fade-in delay-2">
+                    <a href="test.html" class="btn btn-primary">Test It Out!</a>
+                    <a href="#technology" class="btn btn-secondary">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Statement Section -->
+    <section id="problem" class="problem-section">
+        <div class="container">
+            <h2>The Silent Epidemic of Late Diagnosis</h2>
+            <div class="problem-grid">
+                <div class="problem-card slide-in-left">
+                    <div class="icon"><i class="fas fa-brain"></i></div>
+                    <h3>60-70% Neuron Loss</h3>
+                    <p>By the time symptoms are obvious, most neurons are already destroyed.</p>
+                </div>
+                <div class="problem-card slide-in-left delay-1">
+                    <div class="icon"><i class="fas fa-dollar-sign"></i></div>
+                    <h3>$10k+ Diagnostic Costs</h3>
+                    <p>Current MRIs and PET scans are expensive and inaccessible.</p>
+                </div>
+                <div class="problem-card slide-in-left delay-2">
+                    <div class="icon"><i class="fas fa-clock"></i></div>
+                    <h3>5-10 Year Delay</h3>
+                    <p>No tools exist for pre-symptomatic detection during this critical window.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution Section -->
+    <section id="solution" class="solution-section">
+        <div class="container">
+            <h2>Our Privacy-First Solution</h2>
+            <div class="solution-content">
+                <div class="solution-text fade-in">
+                    <h3>NeuroInsight Platform</h3>
+                    <p>Multimodal AI that analyzes subtle biomarkers through your smartphone:</p>
+                    <ul>
+                        <li><i class="fas fa-microphone"></i> Voice tremors analysis</li>
+                        <li><i class="fas fa-eye"></i> Gaze instability tracking</li>
+                        <li><i class="fas fa-keyboard"></i> Keystroke latency measurement</li>
+                    </ul>
+                    <p>All processed locally on your device - no cloud dependency.</p>
+                </div>
+                <div class="solution-image fade-in delay-1">
+                    <!-- <img src="images/biomarkers-infographic.webp" alt="Biomarkers Infographic"> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Section -->
+    <section id="technology" class="tech-section">
+        <div class="container">
+            <h2>Advanced Technical Architecture</h2>
+            <div class="tech-tabs">
+                <button class="tab-btn active" data-tab="data-collection">Data Collection</button>
+                <button class="tab-btn" data-tab="model-arch">Model Architecture</button>
+                <button class="tab-btn" data-tab="training">Training Pipeline</button>
+            </div>
+            <div class="tab-content active" id="data-collection">
+                <h3>Multimodal Data Processing</h3>
+                <div class="tech-grid">
+                    <div class="tech-card">
+                        <h4><i class="fas fa-microphone"></i> Voice Analysis</h4>
+                        <p>Raw audio converted to Mel-spectrograms for tremor detection</p>
+                    </div>
+                    <div class="tech-card">
+                        <h4><i class="fas fa-eye"></i> Gaze Tracking</h4>
+                        <p>MediaPipe iris tracking for micro-saccade abnormalities</p>
+                    </div>
+                    <div class="tech-card">
+                        <h4><i class="fas fa-keyboard"></i> Keystroke Dynamics</h4>
+                        <p>Precise timestamping of key press/release events</p>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="tab-content" id="model-arch">
+                <h3>AI Model Architecture</h3>
+                <div class="model-arch">
+                    <div class="model-step">
+                        <h4>Modality-Specific Encoders</h4>
+                        <ul>
+                            <li>Voice: Fine-tuned HuBERT model</li>
+                            <li>Gaze: Temporal CNN</li>
+                            <li>Keystrokes: LSTM network</li>
+                        </ul>
+                    </div>
+                    <div class="model-step">
+                        <h4>Fusion Layer</h4>
+                        <p>Transformer-based cross-attention to combine embeddings</p>
+                    </div>
+                    <div class="model-step">
+                        <h4>Output</h4>
+                        <p>Risk score (0-100%) with explainable biomarkers</p>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-content" id="training">
+                <h3>Innovative Training Approach</h3>
+                <div class="training-features">
+                    <div class="feature">
+                        <h4>Synthetic Data Generation</h4>
+                        <p>GAN-created vocal tremors and simulated gaze patterns</p>
+                    </div>
+                    <div class="feature">
+                        <h4>Federated Learning</h4>
+                        <p>Collaborative training without data sharing (HIPAA/GDPR compliant)</p>
+                    </div>
+                    <div class="feature">
+                        <h4>Edge Optimization</h4>
+                        <p>Quantized TFLite models for smartphone deployment</p>
+                    </div>
+                    
+                </div>
+                <P>
+
+                </P>
+                <h3>Training Results</h3>
+                <img src="images\training_history.png" alt="Dr. NEURO Logo" class="custom-size">
+            </div>
+        </div>
+    </section>
+
+    <!-- Results Section -->
+    <!-- <section id="results" class="results-section">
+        <div class="container">
+            <h2>Clinical Validation Results</h2>
+            <div class="results-grid">
+                <div class="result-card">
+                    <div class="result-value" data-target="91">0</div>
+                    <div class="result-label">AUC-ROC Score</div>
+                    <div class="result-comparison">vs. 68 (voice-only baseline)</div>
+                </div>
+                <div class="result-card">
+                    <div class="result-value" data-target="8">0</div>
+                    <div class="result-label">False Positive Rate</div>
+                    <div class="result-comparison">vs. 22% baseline</div>
+                </div>
+                <div class="result-card">
+                    <div class="result-value" data-target="12">0</div>
+                    <div class="result-label">ms Inference Speed</div>
+                    <div class="result-comparison">vs. 300ms cloud-based</div>
+                </div>
+                <div class="result-card">
+                    <div class="result-value" data-target="95">0</div>
+                    <div class="result-label">Clinician Approval</div>
+                    <div class="result-comparison">found biomarkers actionable</div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2>Get In Touch with Dr. NEURO</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-envelope"></i> info@drneuro.ai</p>
+                    <p><i class="fas fa-phone"></i> (+91) 9354031843 </p>
+                    <div class="resources">
+                        <h4>Resources</h4>
+                        <a href="assets/whitepaper.pdf" class="resource-link"><i class="fas fa-file-pdf"></i> Technical Whitepaper</a>
+                        <a href="assets/privacy-policy.pdf" class="resource-link"><i class="fas fa-shield-alt"></i> Privacy Policy</a>
+                    </div>
+                </div>
+                <form id="contact-form" class="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" placeholder="Full Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" placeholder="Email Address" required>
+                    </div>
+                    <!-- <div class="form-group">
+                        <select id="interest" required>
+                            <option value="">I'm interested in...</option>
+                            <option value="demo">Product Demo</option>
+                            <option value="partnership">Clinical Partnership</option>
+                            <option value="investment">Investment Opportunity</option>
+                            <option value="other">Other Inquiry</option>
+                        </select>
+                    </div> -->
+                    <div class="form-group">
+                        <textarea id="message" placeholder="Your Message" rows="4"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit Request</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="images/logo.webp" alt="Dr. NEURO Logo">
+                    <h3>Dr. NEURO</h3>
+                    <p>Transforming neurodegenerative care from reactive to preventive.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#problem">Problem Statement</a></li>
+                        <li><a href="#solution">Our Solution</a></li>
+                        <li><a href="#technology">Technology</a></li>
+                        <li><a href="#results">Results</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>Follow Us</h4>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Dr. NEURO. All rights reserved.</p>
+                <div class="legal-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/form-validation.js"></script>
+</body>
+</html>
