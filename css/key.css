@@ -1,0 +1,28 @@
+/* Test phrase styling */
+.test-phrase-box {
+    background: #f8f9fa;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px 0;
+    border-left: 4px solid var(--primary-color);
+}
+
+.test-sentence {
+    font-size: 1.2rem;
+    color: #333;
+    margin: 0;
+    font-weight: 500;
+}
+
+.test-instructions {
+    color: #666;
+    font-size: 0.9rem;
+    margin: 10px 0 0;
+}
+
+/* Unified test controls */
+.neuro-test-controls {
+    display: flex;
+    gap: 15px;
+    margin-top: 25px;
+}
